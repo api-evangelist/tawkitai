@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/CopilotKit/CopilotKit/releases + https://status.copilotkit.ai/
+versioning:
+  scheme: semver
+  current: 1.63.1
+  channel: npm @copilotkit scope (released together)
+  python_sdk_current: 0.1.94
+  docs: https://docs.copilotkit.ai/
+releases:
+  url: https://github.com/CopilotKit/CopilotKit/releases
+  note: Dated GitHub Releases are the canonical changelog; see changelog/tawkitai-changelog.yml
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: No formal deprecation / RFC 8594 Sunset policy located.
+status_page: https://status.copilotkit.ai/
+status_page_provider: BetterStack (Copilot Cloud status)
+sla:
+  url: null
+  note: SLAs referenced for the Enterprise tier (custom); no public uptime target published.
+deprecated_operations: []

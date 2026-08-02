@@ -1,0 +1,14 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/CopilotKit/CopilotKit/releases
+scheme: semver
+current_version: 1.63.1
+python_sdk_version: 0.1.94
+changelog_url: https://github.com/CopilotKit/CopilotKit/releases
+note: >-
+  CopilotKit publishes a dated, per-release changelog as GitHub Releases on the
+  CopilotKit/CopilotKit monorepo; the npm @copilotkit scope is released together
+  under one semver line (current 1.63.1). Individual dated entries are not
+  transcribed here to avoid restating unverified release notes — the GitHub
+  Releases page is the source of truth for the recent window.
+entries: []

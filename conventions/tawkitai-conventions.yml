@@ -1,0 +1,39 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.copilotkit.ai/
+summary: >-
+  Cross-cutting runtime semantics for CopilotKit. The frontend talks to the
+  Copilot Runtime over GraphQL (@copilotkit/runtime-client-gql); agent<->UI
+  interaction is standardized by the AG-UI protocol, a bi-directional,
+  event-streaming connection between a user-facing app and any agentic backend.
+authentication:
+  style: apiKey
+  detail: Copilot Cloud public API key on the frontend provider; see authentication/tawkitai-authentication.yml
+transport:
+  runtime_protocol: GraphQL
+  runtime_client: "@copilotkit/runtime-client-gql"
+  agent_protocol: AG-UI
+  streaming: >-
+    AG-UI is bi-directional and event-based (streamed events between the app
+    and the agent backend), supporting generative UI, tool calls, human-in-the-loop
+    interrupts and reasoning updates.
+persistence:
+  threads: >-
+    Automatic thread and state persistence across sessions and channels
+    (managed by Copilot Cloud; retention varies by plan).
+idempotency:
+  supported: false
+  note: No idempotency-key contract is documented for the runtime.
+pagination:
+  supported: unknown
+  note: No cursor/offset pagination contract is documented at the framework level.
+versioning:
+  scheme: semver
+  npm_current: 1.63.1
+  note: The @copilotkit npm scope is released together under one semver line.
+error_envelope:
+  transport: GraphQL errors from the Copilot Runtime.
+cross_links:
+  authentication: authentication/tawkitai-authentication.yml
+  lifecycle: lifecycle/tawkitai-lifecycle.yml
+  packages: packages/tawkitai-packages.yml

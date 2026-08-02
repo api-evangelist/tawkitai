@@ -1,0 +1,80 @@
+generated: '2026-07-21'
+method: searched
+source: https://registry.npmjs.org/@copilotkit + https://pypi.org/project/copilotkit/
+note: >-
+  First-party client libraries for CopilotKit, all published from the single
+  open-source monorepo github.com/CopilotKit/CopilotKit (MIT). npm scope @copilotkit
+  is version-locked at 1.63.1; the Python agent SDK is versioned independently.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@copilotkit/react-core"
+    version: 1.63.1
+    license: MIT
+    url: https://www.npmjs.com/package/@copilotkit/react-core
+    install: npm install @copilotkit/react-core
+    official: true
+    description: React core provider, hooks and context for CopilotKit agents.
+  - language: javascript
+    registry: npm
+    name: "@copilotkit/react-ui"
+    version: 1.63.1
+    license: MIT
+    url: https://www.npmjs.com/package/@copilotkit/react-ui
+    install: npm install @copilotkit/react-ui
+    official: true
+    description: Prebuilt chat UI components (CopilotChat, CopilotSidebar, CopilotPopup).
+  - language: javascript
+    registry: npm
+    name: "@copilotkit/react-textarea"
+    version: 1.63.1
+    license: MIT
+    url: https://www.npmjs.com/package/@copilotkit/react-textarea
+    install: npm install @copilotkit/react-textarea
+    official: true
+    description: AI-powered autocomplete textarea component (CopilotTextarea).
+  - language: javascript
+    registry: npm
+    name: "@copilotkit/runtime"
+    version: 1.63.1
+    license: MIT
+    url: https://www.npmjs.com/package/@copilotkit/runtime
+    install: npm install @copilotkit/runtime
+    official: true
+    description: Server-side Copilot Runtime that orchestrates agents and LLM routing.
+  - language: javascript
+    registry: npm
+    name: "@copilotkit/runtime-client-gql"
+    version: 1.63.1
+    license: MIT
+    url: https://www.npmjs.com/package/@copilotkit/runtime-client-gql
+    install: npm install @copilotkit/runtime-client-gql
+    official: true
+    description: GraphQL client used by the frontend to talk to the Copilot Runtime.
+  - language: javascript
+    registry: npm
+    name: "@copilotkit/sdk-js"
+    version: 1.63.1
+    license: MIT
+    url: https://www.npmjs.com/package/@copilotkit/sdk-js
+    install: npm install @copilotkit/sdk-js
+    official: true
+    description: JavaScript SDK for building CopilotKit agents.
+  - language: javascript
+    registry: npm
+    name: "@copilotkit/shared"
+    version: 1.63.1
+    license: MIT
+    url: https://www.npmjs.com/package/@copilotkit/shared
+    install: npm install @copilotkit/shared
+    official: true
+    description: Shared types and utilities used across the CopilotKit packages.
+  - language: python
+    registry: pypi
+    name: copilotkit
+    version: 0.1.94
+    license: MIT
+    url: https://pypi.org/project/copilotkit/
+    install: pip install copilotkit
+    official: true
+    description: CopilotKit Python SDK for building agent backends (LangGraph, CrewAI, etc.).

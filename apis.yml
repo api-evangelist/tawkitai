@@ -1,7 +1,30 @@
 aid: tawkitai
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tawkitai.png
 name: TawkitAI
-description: TawkitAI is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  CopilotKit (built by TawkitAI Inc., a Techstars Seattle '23 company) is an
+  open-source, enterprise-grade agentic frontend framework for embedding AI
+  copilots and agents directly into web and mobile applications. It provides
+  React, Angular, Vue and React Native SDKs, prebuilt and headless chat UI
+  components (CopilotChat, CopilotSidebar, CopilotPopup, CopilotTextarea), a
+  GraphQL-based Copilot Runtime, a Python agent SDK, and the AG-UI protocol — a
+  bi-directional connection between a user-facing app and any agentic backend
+  (LangGraph, CrewAI, PydanticAI, Mastra, AWS Strands and others). Copilot Cloud
+  is the hosted platform, adding thread and state persistence, generative UI,
+  and multi-channel delivery across web, mobile, Slack, Teams and WhatsApp. The
+  core is MIT-licensed (github.com/CopilotKit/CopilotKit, ~34.5k stars).
 url: https://raw.githubusercontent.com/api-evangelist/tawkitai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +34,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- AI Agents
+- Copilots
+- Generative UI
+- Frontend
+- Developer Tools
+- React
+- SDK
+- Open Source
+- LLM
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +55,58 @@ maintainers:
 common:
 - type: Website
   url: https://copilotkit.ai/
+- type: DeveloperPortal
+  url: https://docs.copilotkit.ai/
+- type: Documentation
+  url: https://docs.copilotkit.ai/
+- type: APIReference
+  url: https://docs.copilotkit.ai/reference
+- type: GettingStarted
+  url: https://docs.copilotkit.ai/quickstart
+- type: GitHubOrganization
+  url: https://github.com/CopilotKit
+- type: Blog
+  url: https://www.copilotkit.ai/blog
+- type: Pricing
+  url: https://www.copilotkit.ai/pricing
+- type: SignUp
+  url: https://cloud.copilotkit.ai/
+- type: Support
+  url: https://discord.com/invite/BbWd9WS6Fz
+- type: TermsOfService
+  url: https://www.copilotkit.ai/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.copilotkit.ai/privacy-policy
+- type: Packages
+  url: packages/tawkitai-packages.yml
+- type: SDKs
+  url: packages/tawkitai-packages.yml
+- type: CLI
+  url: cli/tawkitai-cli.yml
+- type: Components
+  url: components/tawkitai-components.yml
+- type: Authentication
+  url: authentication/tawkitai-authentication.yml
+- type: Conventions
+  url: conventions/tawkitai-conventions.yml
+- type: Lifecycle
+  url: lifecycle/tawkitai-lifecycle.yml
+- type: StatusPage
+  url: https://status.copilotkit.ai/
+- type: ChangeLog
+  url: changelog/tawkitai-changelog.yml
+- type: Conformance
+  url: conformance/tawkitai-conformance.yml
+- type: LLMsTxt
+  url: llms/tawkitai-llms.txt
+- type: DomainSecurity
+  url: security/tawkitai-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/tawkitai-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.copilotkit.ai/vulnerability-disclosure
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 11
+  pass: local-v1

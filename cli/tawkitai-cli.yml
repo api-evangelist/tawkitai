@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.copilotkit.ai/cli
+name: CopilotKit CLI
+summary: >-
+  First-party CLI distributed via npm and run with npx. Scaffolds a new
+  CopilotKit application and wires the frontend SDK to a Copilot Runtime /
+  Copilot Cloud project.
+install:
+  - method: npx
+    command: npx copilotkit@latest create
+  - method: npm
+    command: npm install -g copilotkit
+docs: https://docs.copilotkit.ai/cli
+commands:
+  - name: create
+    invocation: npx copilotkit@latest create
+    description: >-
+      Scaffold a new CopilotKit project and connect it to a runtime / Copilot
+      Cloud project, generating the frontend and backend wiring.

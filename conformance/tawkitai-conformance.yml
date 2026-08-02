@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: derived
+source: packages/tawkitai-packages.yml + https://docs.copilotkit.ai/
+note: >-
+  CopilotKit is an open-source agentic frontend framework, not a REST API, so
+  cross-cutting HTTP standards (OAuth2/OIDC, RFC 9457, OData, FHIR, etc.) largely
+  do not apply. Conformance is asserted against the standards that are relevant
+  to its surface. No published compliance certifications (SOC 2 / ISO 27001 /
+  etc.) were located, so no Compliance pointer is emitted.
+standards:
+  - id: ag-ui-protocol
+    conforms: true
+    evidence: Native implementation of the AG-UI protocol (ag-ui.com); frontend<->agent contract.
+  - id: open-source-mit
+    conforms: true
+    evidence: All @copilotkit npm packages and the copilotkit PyPI SDK are MIT licensed.
+  - id: graphql
+    conforms: true
+    evidence: Copilot Runtime is consumed over GraphQL via @copilotkit/runtime-client-gql.
+  - id: api-key-auth
+    conforms: true
+    evidence: Copilot Cloud uses public API key auth on the frontend provider.
+  - id: mcp-interop
+    conforms: true
+    evidence: AG-UI documentation describes interop with MCP and A2A agent protocols.
+  - id: oauth2
+    conforms: false
+    evidence: No OAuth2/OIDC security scheme; authentication is API-key based.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Runtime surfaces GraphQL errors rather than RFC 9457 problem+json.

@@ -1,0 +1,49 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.copilotkit.ai/reference
+summary: >-
+  CopilotKit ships client-side, embeddable UI components — this is its core
+  offering. React is first-class; Angular, Vue and React Native are also
+  supported. Components are consumed from @copilotkit/react-ui and
+  @copilotkit/react-textarea, driven by the @copilotkit/react-core provider.
+loader_libraries:
+  - "@copilotkit/react-core"
+  - "@copilotkit/react-ui"
+  - "@copilotkit/react-textarea"
+families:
+  - family: Chat surfaces
+    package: "@copilotkit/react-ui"
+    components:
+      - name: CopilotChat
+        description: Full in-app chat surface.
+      - name: CopilotChatView
+        description: Chat view primitive for custom layouts.
+      - name: CopilotSidebar
+        description: Docked sidebar copilot.
+      - name: CopilotPopup
+        description: Floating popup copilot.
+  - family: Messages & input
+    package: "@copilotkit/react-ui"
+    components:
+      - name: Assistant/User message components
+        description: Renderers for assistant and user messages.
+      - name: Message list renderer
+        description: Renders the running message list.
+      - name: Input controls
+        description: Chat input controls.
+  - family: Threads
+    package: "@copilotkit/react-ui"
+    components:
+      - name: CopilotThreadsDrawer
+        description: Thread management drawer for persisted conversations.
+  - family: Textarea
+    package: "@copilotkit/react-textarea"
+    components:
+      - name: CopilotTextarea
+        description: Drop-in textarea with AI autocomplete and inline editing.
+headless:
+  supported: true
+  description: >-
+    Headless UI options are available for fully custom implementations via
+    @copilotkit/react-core hooks (useAgent, useCopilotKit, useFrontendTool,
+    useRenderTool, useThreads and others).
