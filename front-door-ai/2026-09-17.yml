@@ -1,0 +1,33 @@
+# Front Door AI Index — tawkitai — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: tawkitai
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: copilotkit.ai
+  final_host: www.copilotkit.ai
+  ownership: own
+  owner: tawkitai
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 25
+  host_score: 25
+  density: 11.78
+  words: 2122
+  tiers:
+    agentic: 14
+    core: 11
+    model: 0
+  ambiguous: 41
+  top_terms:
+    agent: 41
+    AI: 8
+    agentic: 6
+    AI agent: 3
+    LLMs: 3
+    MCP: 2
+    copilot: 1
+    fine-tune: 1
+    prompts: 1
