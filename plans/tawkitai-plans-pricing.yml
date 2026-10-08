@@ -1,0 +1,57 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.copilotkit.ai/pricing
+sources:
+- https://www.copilotkit.ai/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed+licensed
+  method: page
+  read: '2026-10-07'
+  evidence: Self-hosting incl. database
+  managed_tier: Pro
+published: true
+note: CopilotKit pricing page with four stages; Enterprise is custom. Team tier includes self-hosting
+  and Enterprise VPC/on-prem under paid plans.
+plan_count: 4
+currency: USD
+plans:
+- name: Developer
+  price_text: Free forever
+  period: month
+  unit: one developer
+  included_quota: Cloud Hosting Included; Thread Retention 3 days; Max Threads 200; Multimodal Storage
+    1 GB; Slack/Teams Orgs 1; Channels 5; Credits 500 total
+- name: Pro
+  price_text: $39 /month
+  price: 39
+  currency: USD
+  period: month
+  included_quota: Thread Retention 5 days; Max Threads 5,000; Multimodal Storage 10 GB; Slack/Teams Orgs
+    1; Channels 10; Credits 2,000/mo
+- name: Team
+  price_text: $100 /seat/month
+  price: 100
+  currency: USD
+  period: month
+  unit: seat
+  included_quota: Up to 5 seats; Thread Retention 14 days; Max Threads 25,000; Multimodal Storage 100
+    GB; Orgs 2; Channels 20; Credits 5,000/mo; Self-hosting incl. database
+- name: Enterprise
+  price_text: Custom tailored pricing
+  period: none
+  included_quota: VPC or On-Prem Deployment Included; Unlimited Max Threads; SLA; Dedicated Engineering
+    Support Up to 5 hrs/week
+rate_limit_statements:
+- Max Threads 200
+- Max Threads 5,000
+- Max Threads 25,000
+- Channels Credits 500 total
+- Channels Credits 2,000/mo
+- Channels Credits 5,000/mo
